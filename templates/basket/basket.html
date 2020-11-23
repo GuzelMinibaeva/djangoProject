@@ -1,0 +1,15 @@
+{% extends "movies/base.html" %}
+
+{% block content %}
+
+    {% if items %}
+        <ul>
+            {% for item in items%}
+                <li>{{ item.movie }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have not items yet.</p>
+    {% endif %}
+    
+{% endblock %}
